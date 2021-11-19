@@ -1667,6 +1667,11 @@
   resolved "https://registry.npmjs.org/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.0-rc.1.tgz#2f4f04ae831ebca688acea5531658d1236baed23"
   integrity sha512-ShfPIvuD+AFUtUcTw5okLUnBy8o4NrC0ICPpD7z+KG4gbfWzZMmT2TAkjqO9pp21cI+bYzigsBZ/FoXiU5+h7Q==
 
+"@vue/cli-plugin-vuex@~4.5.0":
+  version "4.5.15"
+  resolved "https://registry.npmjs.org/@vue/cli-plugin-vuex/-/cli-plugin-vuex-4.5.15.tgz#466c1f02777d02fef53a9bb49a36cc3a3bcfec4e"
+  integrity sha512-fqap+4HN+w+InDxlA3hZTOGE0tzBTgXhKLoDydhywqgmhQ1D9JA6Feh94ze6tG8DsWX58/ujYUqA8jAz17FJtg==
+
 "@vue/cli-service@~5.0.0-beta.3":
   version "5.0.0-rc.1"
   resolved "https://registry.npmjs.org/@vue/cli-service/-/cli-service-5.0.0-rc.1.tgz#a0e659d007acf6e162d8ab42b590386ec9c1fcb9"
@@ -1824,7 +1829,7 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
-"@vue/devtools-api@^6.0.0-beta.18":
+"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.18":
   version "6.0.0-beta.20.1"
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.1.tgz#5b499647e929c35baf2a66a399578f9aa4601142"
   integrity sha512-R2rfiRY+kZugzWh9ZyITaovx+jpU4vgivAEAiz80kvh3yviiTU3CBuGuyWpSwGz9/C7TkSWVM/FtQRGlZ16n8Q==
@@ -10641,6 +10646,13 @@ vuetify@^3.0.0-alpha.0:
   version "3.0.0-alpha.11"
   resolved "https://registry.npmjs.org/vuetify/-/vuetify-3.0.0-alpha.11.tgz#927a46feda8ca36f1616dadb125ee09107f31fd8"
   integrity sha512-dJ1sJqcRPt5yNngCzv22vtFFh3o3/ZsQkOxbKeAzoGBYeYMUl8SruQUN/nC9plW7rxQFFVIp/ozcYsJmiZmgtA==
+
+vuex@^4.0.0-0:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/vuex/-/vuex-4.0.2.tgz#f896dbd5bf2a0e963f00c67e9b610de749ccacc9"
+  integrity sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.11"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"
