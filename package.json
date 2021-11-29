@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@vue/composition-api": "^1.4.0",
     "axios": "^0.24.0",
     "babel-loader": "^8.2.3",
     "core-js": "^3.6.5",
@@ -24,6 +25,7 @@
     "vue-router": "^4.0.0-0",
     "vuetify": "^3.0.0-alpha.0",
     "vuex": "^4.0.0-0",
+    "vuex-composition-helpers": "^2.0.1",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
-import { ActionTree, createStore, MutationTree } from 'vuex';
-import { NamedAPIResourceList } from 'pokenode-ts';
+import { ActionContext, ActionTree, createStore, MutationTree } from 'vuex'
+import { NamedAPIResourceList } from 'pokenode-ts'
 import axios from 'axios'
 
 export type RootState = {
@@ -15,13 +15,22 @@ const state: RootState = {
   }
 }
 
-const mutations: MutationTree<RootState> = {
-  setPokemonList(state: RootState, pokemonList: NamedAPIResourceList) {
+export interface RootMutations extends MutationTree<RootState> {
+  setPokemonList(state: RootState, pokemonList: NamedAPIResourceList): void
+}
+
+const mutations: RootMutations = {
+  setPokemonList(state: RootState, pokemonList: NamedAPIResourceList): void {
     state.pokemonList = pokemonList
   }
 }
 
-const actions: ActionTree<RootState, RootState> = {
+export interface RootActions extends ActionTree<RootState, RootState> {
+  loadPokemonList(ctx: ActionContext<RootState, RootState>): void,
+  loadMorePokemonList(ctx: ActionContext<RootState, RootState>): void
+}
+
+const actions: RootActions = {
   async loadPokemonList({ commit }) {
     const { data }: { data: NamedAPIResourceList } = await axios.get('https://pokeapi.co/api/v2/pokemon/')
     commit('setPokemonList', data)

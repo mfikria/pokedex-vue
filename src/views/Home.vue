@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" :src="require('@/assets/logo.png')">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-container fluid>
+    <Navbar />
+    <PokemonList />
+  </v-container>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Navbar from '@/components/Navbar.vue'
+import PokemonList from '@/components/PokemonList.vue'
 
-@Options({
+export default {
   components: {
-    HelloWorld,
+    Navbar,
+    PokemonList,
   },
-})
-export default class Home extends Vue {}
+}
 </script>

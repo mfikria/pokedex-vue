@@ -1927,6 +1927,13 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
+"@vue/composition-api@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/@vue/composition-api/-/composition-api-1.4.0.tgz#784450d0da1ecfd82f4094053ca593849cbd2e37"
+  integrity sha512-fanqJw1cqhkfS1dcpFY52CeR0aWDBr7ub/0ObPWqMnNPdRsMi1gX04Q3aLeRtJEuVeCFewNbqvkPskkSPTVaXQ==
+  dependencies:
+    tslib "^2.3.1"
+
 "@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.18":
   version "6.0.0-beta.20.1"
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.1.tgz#5b499647e929c35baf2a66a399578f9aa4601142"
@@ -11095,6 +11102,11 @@ vuetify@^3.0.0-alpha.0:
   version "3.0.0-alpha.11"
   resolved "https://registry.npmjs.org/vuetify/-/vuetify-3.0.0-alpha.11.tgz#927a46feda8ca36f1616dadb125ee09107f31fd8"
   integrity sha512-dJ1sJqcRPt5yNngCzv22vtFFh3o3/ZsQkOxbKeAzoGBYeYMUl8SruQUN/nC9plW7rxQFFVIp/ozcYsJmiZmgtA==
+
+vuex-composition-helpers@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/vuex-composition-helpers/-/vuex-composition-helpers-2.0.1.tgz#8a1a2e5ac18e5e8e2c52f7ec717797f6261bcf6c"
+  integrity sha512-i2Bg24AH9/AL5nDdh2lmP19Mcl86EJLV7EeVjrCtqY29wkzZa6PWaYYKcbwbYffYoAiTtz1n54VhIaZ1MxNAkw==
 
 vuex@^4.0.0-0:
   version "4.0.2"
